@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.square {
+  width: 370px;
+  height: 575px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.square1 {
+  background-color: white;
+  margin-right: 40px;
+  position: relative;
+  box-shadow: 0 3.2px 2.2px rgba(0,0,0,.02), 0 7px 5.4px rgba(0,0,0,.028), 0 12.1px 10.1px rgba(0,0,0,.035), 0 19.8px 18.1px rgba(0,0,0,.042), 0 34.7px 33.8px rgba(0,0,0,.05), 0 81px 81px rgba(0,0,0,.07);
+}
+
+.square2 {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 3.2px 2.2px rgba(0,0,0,.02), 0 7px 5.4px rgba(0,0,0,.028), 0 12.1px 10.1px rgba(0,0,0,.035), 0 19.8px 18.1px rgba(0,0,0,.042), 0 34.7px 33.8px rgba(0,0,0,.05), 0 81px 81px rgba(0,0,0,.07);
+}
+
+.frame {
+  width: 300px;
+  height: 450px;
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch; /* Hỗ trợ cuộn trên các thiết bị cảm ứng */
+  scroll-behavior: smooth; /* Hiệu ứng cuộn mượt */
+  transform: translate(-50%, -50%);
+  margin-top: 80%;
+  margin-bottom: 20%;
+}
+
+.column-title {
+  margin: 0;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(20px, 50px);
+}
+
+.column-title-total {
+  margin: 0;
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(270px, 50px);
+}
+
+.logo {
+  width: 50px;
+  height: 26px;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.yellow-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background-color: yellow;
+  border-radius: 0 0 0 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 20px;
+   position: relative; /* Thêm thuộc tính position để làm cơ sở cho phần màu */
+
+}
+.product-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 10px;
+  background-position: center;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.product-image1 {
+  background-color: #e1e7ed;
+}
+
+.product-image2 {
+  background-color: #4D317F;
+}
+
+.product-image3 {
+  background-color: #E8D026;
+}
+
+.product-image4 {
+  background-color: #FD584A;
+}
+
+.product-image5 {
+  background-color: #D4D7D6;
+}
+
+.product-image6 {
+  background-color: #F2F5F4;
+}
+
+.product-image7 {
+  background-color: #22AFDC;
+}
+
+.product-image8 {
+  background-color: #B50320;
+}
+
+.product-image9 {
+  background-color: #3569A1;
+}
+
+.product-image10 {
+  background-color: #54D4C9;
+}
+
+
+
+.product-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+
+.product-image0 {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  object-fit: cover;
+  background-color: #f2f2f2;
+}
+
+.product-description {
+  text-align: justify; /* Thêm thuộc tính text-align: justify; */
+  margin-bottom: 10px;
+}
+.product-description1 {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+#total-price {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding: 10px;
+  margin: 0;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  transform: translate(20px, 50px);
+}
+.empty{
+  margin: 0;
+  font-size: 15px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  transform: translate(20px, 50px);
+}
+
+
+
+.product-add{
+  cursor: pointer;
+    background-color: #f6c90e;
+    font-weight: 700;
+    font-size: 14px;
+    box-sizing: border-box;
+    width: auto;
+    height: 46px;
+    min-width: 46px;
+    padding: 16px 20px;
+    border-radius: 100px;
+    transition: all .25s ease;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+/* Ẩn thanh cuộn mặc định */
+.frame::-webkit-scrollbar {
+  display: none;
+}
+
+
+
